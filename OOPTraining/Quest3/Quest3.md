@@ -1,11 +1,11 @@
-﻿TODO : Créez dans le dossier Quest3 une classe "Organization" avec comme propriétés
+﻿TODO 21) : Créez dans le dossier Quest3 une classe "Organization" avec comme propriétés
 - Une propriété Name
 - Une propriété "HeadQuarter" de type PointOfInterest qui représentera le siège de l'organisation 
 - Une propriété "CampusList" de type List<Campus> (https://docs.microsoft.com/fr-fr/dotnet/api/system.collections.generic.list-1?view=net-5.0)
-TODO : Ajouter un constructeur qui prend en paramètre le nom et le siège de l'organisation', ainsi qu'une liste de campus
+TODO 22) : Ajouter un constructeur qui prend en paramètre le nom et le siège de l'organisation', ainsi qu'une liste de campus
 
 Dans le fichier Program.cs de du projet OOPTrainingConsoleApp
-TODO :  vous allez modifier la partie qui affiche le HelloWorld pour exécuter les traitements suivants
+TODO 23) :  vous allez modifier la partie qui affiche le HelloWorld pour exécuter les traitements suivants
 - Vous allez créer 3 objets Campus représentant les campus suivants : 
 	Bordeaux Ynov Campus (capacité 1500 places)
 	Toulouse Ynov Campus (capacité 1200 places)
@@ -29,4 +29,4 @@ Pour la 1ère colonne, trouvez 2 manières différentes de la remplir :
 - La première en modifiant la classe PointOfInterest et en utilisant une énumération https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/builtin-types/enum
 - La deuxième sans avoir à modifier aucune des classes
 
-En C#, que désigne la notion d'"Object initializers" ? Quel est l'intérêt de cette fonctionalité ?
+QUESTION : En C#, que désigne la notion d'"Object initializers" ? Quel est l'intérêt de cette fonctionalité ?
