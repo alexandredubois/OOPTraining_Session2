@@ -14,7 +14,7 @@ TODO 23) :  vous allez modifier la partie qui affiche le HelloWorld pour exécut
 	la Porte Cailhau de Bordeaux : https://fr.wikipedia.org/wiki/Porte_Cailhau
 	l'Obélisque de Louxor : https://fr.wikipedia.org/wiki/Ob%C3%A9lisque_de_Louxor
 	le musée des augustins : https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Augustins_de_Toulouse
-- Vous allez ensuite créer une méthode dont la signature sera la suivante : public void DisplayPointOfInterestList(List<PointOfInterest> poiList), cette méthode sera appelée avec une liste comportant vos campus et vos monuments
+- Vous allez ensuite créer une méthode dont la signature sera la suivante : public static void DisplayPointOfInterestList(List<PointOfInterest> poiList), cette méthode sera appelée avec une liste comportant vos campus et vos monuments
 Cette méthode affichera dans la console un tableau de la forme suivante avec tous les objets passés en paramètre :
 ______________________________________________________________________________________________________________________
 |  Type    | Nom                                    | Latitude        | Longitude        | Distance par rapport à moi |
