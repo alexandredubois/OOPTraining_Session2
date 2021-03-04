@@ -29,15 +29,58 @@ namespace OOPTrainingConsoleApp
             poiList.Add(obelisque);
             poiList.Add(musee);
 
-            DisplayPointOfInterestList(poiList);
+            DisplayPointOfInterestListWithEnum(poiList);
+
+            DisplayPointOfInterestListWithoutEnum(poiList);
 
         }
 
 
-        public static void DisplayPointOfInterestList(List<PointOfInterest> poiList)
+        public static void DisplayPointOfInterestListWithEnum(List<PointOfInterest> poiList)
         {
-            
-        
+            PointOfInterest me = new PointOfInterest("Alexandre sur le campus", 44.854186, -0.5663056);
+
+            Console.WriteLine("______________________________________________________________________________________");
+            Console.WriteLine("| Type       | Nom                  |  Latitude  | Longitude  | Distance d'ici        |");
+            Console.WriteLine("| __________ | ____________________ | __________ | ___________| _____________________ |");
+
+            foreach (var poi in poiList)
+            {
+                Console.WriteLine("| {0} | {1} | {2} | {3} | {4} m|",
+                    poi.Nature.ToString().PadRight(10, ' '),
+                    poi.Name.PadRight(20, ' '),
+                    poi.Latitude.ToString().PadRight(10, ' '),
+                    poi.Longitude.ToString().PadRight(10, ' '),
+                    poi.GetDistance(me).ToString().PadRight(20, ' '));
+            }
+        }
+
+        public static void DisplayPointOfInterestListWithoutEnum(List<PointOfInterest> poiList)
+        {
+            PointOfInterest me = new PointOfInterest("Alexandre sur le campus", 44.854186, -0.5663056);
+
+            Console.WriteLine("______________________________________________________________________________________");
+            Console.WriteLine("| Type       | Nom                  |  Latitude  | Longitude  | Distance d'ici        |");
+            Console.WriteLine("| __________ | ____________________ | __________ | ___________| _____________________ |");
+
+            foreach (var poi in poiList)
+            {
+                Console.WriteLine("| {0} | {1} | {2} | {3} | {4} m|",
+                    GetPoiNature(poi).PadRight(10, ' '),
+                    poi.Name.PadRight(20, ' '),
+                    poi.Latitude.ToString().PadRight(10, ' '),
+                    poi.Longitude.ToString().PadRight(10, ' '),
+                    poi.GetDistance(me).ToString().PadRight(20, ' '));
+            }
+        }
+
+        private static string GetPoiNature(PointOfInterest poi)
+        {
+            if(poi is Campus)
+            {
+                return "Campus";
+            }
+            return "Monument";
         }
 
     }
